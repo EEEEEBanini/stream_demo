@@ -1,0 +1,13 @@
+<h2>PWD: <%=@path%></h2>
+<ul>
+<% @directory_list.each do |item| %>
+  <li>
+  <% case item
+     when HdfsFile %>
+  <a href="/browse/<%=item.path.to_file_s%>"><%=item.path.name%></a> <%=item.to_file_size%>
+  <% when HdfsDirectory %>
+  <a href="/browse/<%=item.path.to_directory_s%>"><%=item.path.name%>/</a>
+  <% end %>
+  </li>
+<% end %>
+</ul>

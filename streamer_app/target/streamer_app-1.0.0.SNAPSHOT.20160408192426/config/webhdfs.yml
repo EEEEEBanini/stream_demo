@@ -1,0 +1,12 @@
+development:
+  host: pophdevhadoopmstr01.northamerica.cerner.net
+  port: 50070
+  username: webhdfs-ruby-streamer_app
+test:
+  host: pophdevhadoopmstr01.northamerica.cerner.net
+  port: 50070
+  username: webhdfs-ruby-streamer_app
+production:
+  host: pophdevhadoopmstr01.northamerica.cerner.net
+  port: 50070
+  username: webhdfs-ruby-streamer_app

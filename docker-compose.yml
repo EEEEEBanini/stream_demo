@@ -1,0 +1,13 @@
+version: '2'
+services:
+  file_server:
+    build: ./file_chunk_server
+    ports:
+      - "8889:8889"
+
+  streamer_app:
+    build: ./streamer_app
+    ports:
+      - "8888:8888"
+    links:
+      - file_server

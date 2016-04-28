@@ -1,0 +1,22 @@
+name: Data Syndication Streamer App
+group_id: com.cerner.pophealth.datasyndication
+artifact_id: streamer_app
+version: 1.0.0.SNAPSHOT
+test: rspec
+doc: tomdoc
+package:
+  type: rails
+github:
+  project_url: https://github.cerner.com/c11793/webhdfs_experiments
+repository:
+  id: cerner-rubygems-release
+  url: http://repo.release.cerner.corp/main/repo/
+site_repository:
+  id: cerner-release-main-site
+  url: http://repo.release.cerner.corp/main/site/
+snapshot_repository:
+  id: pophealth-snapshot
+  url: http://repo.pophealth.cerner.corp/nexus/content/repositories/pophealth-snapshot/
+snapshot_site_repository:
+  id: pophealth-snapshot-site
+  url: http://repo.pophealth.cerner.corp/nexus/content/repositories/pophealth-snapshot-site/

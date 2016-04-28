@@ -1,0 +1,17 @@
+# docker-compose.yml
+
+web:
+  build: .
+  ports:
+    - "8888:8888"
+  environment:
+    RACK_ENV: development
+  env_file:
+    - .env.ds
+  volumes:
+    - ".:/home/app/streamer_app"
+  dns:
+    - "10.175.245.14"
+    - "10.175.245.15"
+  dns_search:
+    - "cerner.com"
